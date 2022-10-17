@@ -1,0 +1,49 @@
+.boton {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    transition: all 0.2s;
+    border-radius: 2px;
+    border: 5px solid black;
+    opacity: 0;
+}
+
+.boton:hover {
+    opacity: 0;
+}
+
+.boton:active {
+    transform: translateY(-2px);
+}
+
+div {
+    border-radius: 7px;
+    position: absolute;
+    width: 1200px;
+    height: 70px;
+    transition: width 2s, left 1s, background-color 1s;
+    opacity: 0;
+    z-index: 20;
+}
+
+.div1 {
+    background-color: red;
+    top: 40%;
+}
+
+.div2 {
+    background-color: yellow;
+    top: 55%;
+}
+
+.div3 {
+    background-color: red;
+    top: 70%;
+}
+
+.div1movPos {
+    background-color: aqua;
+}
