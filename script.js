@@ -9,14 +9,14 @@ window.onload = () => {
         div2.style.right = '70%'
         div3.style.right = '50%'        
 
-        div1.style.opacity = '1'
-        div2.style.opacity = '1'
-        div3.style.opacity = '1'
+        div1.style.opacity = '0.7'
+        div2.style.opacity = '0.7'
+        div3.style.opacity = '0.7'
 
         btn.style.left = '50%'
         btn.style.opacity = 1
 
-        
+
         /*let rect = div2.getBoundingClientRect();
         console.log(rect.top, rect.right, rect.bottom, rect.left);*/
     // }, 500)
