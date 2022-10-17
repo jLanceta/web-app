@@ -16,6 +16,7 @@ window.onload = () => {
         btn.style.left = '50%'
         btn.style.opacity = 1
 
+        
         /*let rect = div2.getBoundingClientRect();
         console.log(rect.top, rect.right, rect.bottom, rect.left);*/
     // }, 500)
