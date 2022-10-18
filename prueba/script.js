@@ -47,3 +47,5 @@ window.onload = () => {
 //         div3.style.left = '30%'
 //     }*/
 // })
+
+// document.querySelectorAll('*').forEach((v) => {v.style.backgroundColor = 'rgb(150,150,150)'})

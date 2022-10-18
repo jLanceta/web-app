@@ -1,53 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
-    background-color: rgb(37,37,38);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(15,15,16);
+    color: white;
+}
+
+button {
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    width: 120px;
+    height: 70px;
+    /* transition: all 1s; */
+}
+
+button:active {
+    transform: translate(0,1px);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    flex-direction: column;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    /* border: 2px solid white; */
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.result p {
+    color: white;
+    transition: all 1s;
+    text-align: center;
+}
+
+.botones {
+    display: grid;
+    /* border: 2px solid white; */
+    column-gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.prompt p {
+    color: white;
+    font-size: 16px;
+}
+
+.btnConfirm {
+    background-color: rgb(37, 215, 37);
 }
 
 .boton {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(-50%,-50%);
-    transition: all 0.2s;
-    border-radius: 2px;
-    border: 5px solid black;
-    opacity: 0;
+    word-wrap: break-word;
 }
 
-.boton:hover {
-    opacity: 0;
-}
-
-.boton:active {
-    transform: translateY(-2px);
-}
-
-div {
-    border-radius: 7px;
-    position: absolute;
-    width: 1200px;
-    height: 70px;
-    transition: width 2s, left 1s, background-color 1s;
-    opacity: 0;
-    z-index: 20;
-}
-
-.div1 {
-    background-color: red;
-    top: 40%;
-}
-
-.div2 {
-    background-color: yellow;
-    top: 55%;
-}
-
-.div3 {
-    background-color: red;
-    top: 70%;
-}
-
-.div1movPos {
-    background-color: aqua;
+.finTexto {
+    color: coral;
+    font-size: 20px;
 }
