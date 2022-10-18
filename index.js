@@ -35,6 +35,7 @@ btn.addEventListener('click', () => {
         botones.appendChild(btnConfirm)
         botones.style.gridTemplateColumns = '1fr 1fr'
         btn.style.backgroundColor = 'rgb(255,50,50)'
+        // btn.innerHTML = '<p>Seleccionar<br>otro</p>'
         btn.textContent = 'Seleccionar otro'
         
         

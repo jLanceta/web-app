@@ -4,4 +4,5 @@ let comida = [
     'Pescado',
     'Garbanzos',
     'Patatas fritas',
+    'Sopa de verduras 🤮'
 ]
