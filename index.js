@@ -9,6 +9,7 @@ btnConfirm.classList.add('btnConfirm')
 let anterior = undefined
 let comidaHoy = ''
 let clicado = false
+let prev = 0
 
 window.onload = () => {
     setTimeout(() => {
@@ -38,18 +39,19 @@ btn.addEventListener('click', () => {
         // btn.innerHTML = '<p>Seleccionar<br>otro</p>'
         btn.textContent = 'Seleccionar otro'
         
-        
-        
         clicado = true
-    } else {
-        
     }
-
-    comidaHoy = comida[Math.floor(Math.random() * comida.length)]
-    while (anterior == comidaHoy) {
-        comidaHoy = comida[Math.floor(Math.random() * comida.length)]
+    
+    let idxAnt = comida.indexOf(anterior)
+    let idx = idxAnt
+    
+    while (idx == idxAnt || idx == prev) {
+        idx = Math.floor(Math.random() * comida.length)
     }
-
+    
+    comidaHoy = comida[idx]
+    prev = idx
+    
     textPrompt.innerHTML = 'Comida de hoy: <span style="color: #00f000">' + comidaHoy + '</span>'
 })
 
